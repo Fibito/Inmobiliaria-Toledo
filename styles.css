@@ -98,7 +98,7 @@ body,div,ul,nav,header,footer,a,li,label{
         animation-range: cover 0% contain 100%;
         position: sticky;
         top: 0;
-        will-change: background-color, color, tranform;
+        will-change: background-color, color, transform;
         
     }
 
@@ -418,7 +418,7 @@ body,div,ul,nav,header,footer,a,li,label{
     padding: 12px;
     background-color: #080808;
     color: #fff;
-    transition: background-color 0.2s, trnsform 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
 }
 input[type="submit"]:active {
     background-color: #174a96;
@@ -601,7 +601,7 @@ footer{
     background-image: url(imagenes/pancho/hab2_p.webp);
 }
 .baño_p{
-    background-image: url(imagenes/pancho//bano_p.webp);
+    background-image: url(imagenes/pancho/bano_p.webp);
 }
 .garaje_p{
     background-image: url(imagenes/pancho/garaje_p.webp);
@@ -701,10 +701,7 @@ footer{
         grid-column:  span 1 ;
         grid-row: span 2;
     }
-    .prop__contaier >:nth-child(6){
-
-        grid-row: span 2;
-    }
+    
     .shadow__div{
         
         margin: 0;

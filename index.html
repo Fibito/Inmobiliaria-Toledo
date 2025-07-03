@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toledo Inmobiliaria</title>
-    <link rel="icon" type="image/png" href=".//imagenes/logo.webp">
+    <link rel="icon" type="image/png" href="imagenes/logo.webp">
     <meta name="description" content="Esta pagina web trata de ventas y alquileres de inmuebles">
-    <meta name="keywords" content="inmobiliaria, inmobiliaria cidad de Azul, alquileres en Azul, ventas de propiedades en Azul, ventas de propiedades, alquileres, casas, propiedades, propiedades a la venta, Toledo Daiana inmobiliaria, inmobiliaria Toledo Daiana">
+    <meta name="keywords" content="inmobiliaria, inmobiliaria ciudad de Azul, alquileres en Azul, ventas de propiedades en Azul, ventas de propiedades, alquileres, casas, propiedades, propiedades a la venta, Toledo Daiana inmobiliaria, inmobiliaria Toledo Daiana">
     <meta property="og:title" content="Toledo Inmobiliaria">
     <meta property="og:description" content="¿Queres vender, alquilar o encontrar tu nuevo hogar? Has llegado al lugar correcto">
     <link rel="stylesheet" href="styles.css">
@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <input type="checkbox" class="header__checkbox" id="open-menu">
-        <label class="header__open-nav-button" for="open-menu" role="button">=</label>
+        <label class="header__open-nav-button" for="open-menu" role="button" aria-label="Abrir menú">=</label>
         <div class="header__logo-container"><img class="header__logo" src="imagenes/logo.png" alt="logo">Toledo Inmobiliaria</div>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -36,7 +36,7 @@
                         <h2>Tu mejor opción en propiedades.</h2>
                         <p>
                             ¿Queres vender, alquilar o encontrar tu nuevo hogar? Has llegado al lugar correcto, estamos para ayudarte a encontrar la mejor solución para tus necesidades.
-                            Nuestros servicios inmobiliarios están enfocados en ayudarte a tomar desiciones informadas y seguras en el mercado inmobiliario. 
+                            Nuestros servicios inmobiliarios están enfocados en ayudarte a tomar decisiones informadas y seguras en el mercado inmobiliario. 
                         </p>
                     </div>
                     
@@ -93,42 +93,46 @@
     <section class="form" id="contact">
         <h2 class="form__title">Formulario de consulta</h2>
         <p class="formulario-p">Por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad.</p>
-        <form class="form__form" action="">
+        <form class="form__form" action="" name="contact" netlify>
             <div class="form__input-container">
                 <label>
-                    <input type="text" placeholder="Nombre">
+                    Nombre
+                    <input type="text" placeholder="Nombre" aria-label="Nombre">
                 </label>
             </div>
 
             <div class="form__input-container">
                 <label>
-                    <input type="text" placeholder="Apellido">
+                    Apellido
+                    <input type="text" placeholder="Apellido" aria-label="Apellido">
                 </label>
             </div>
 
             <div class="form__input-container">
                 <label>
-                    <input type="email" placeholder="Correo">
+                    Correo
+                    <input type="email" placeholder="Correo" aria-label="Correo">
                 </label>
             </div>
 
             <div class="form__input-container">
                 <label>
-                    <textarea placeholder="Escriba su mensaje..." name="" id=""></textarea>
+                    Mensaje
+                    <textarea placeholder="Escriba su mensaje..." name="" id="" aria-label="Mensaje"></textarea>
                 </label>
             </div>
-            <div class="form__input-container"><input type="submit">
+            <div class="form__input-container"><input type="submit" value="Enviar">
             </div>
         </form>
     </section>
     <section class="contacto">
         <h2 class="contact__title">Contacto</h2>
         <div class="ubicacion">
-            <img src="imagenes/mapa (1).png" alt="">
+            <img src="imagenes/mapa (1).png" alt="Mapa de ubicación">
             <p class="">Olavarria 692</p>
         </div>
         <div class="phone">
-            <img src="/imagenes/telefono.png" alt="">
+            <img src="imagenes/telefono.png" alt="Icono de teléfono">
             <p class="celular">2281 15349595</p>
         </div>
         <p class="contact__text">Tambien puedes contactarnos a través de nuestras redes sociales o por correo electrónico.</p>

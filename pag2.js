@@ -1,16 +1,20 @@
-document.querySelectorAll('.prop__container-item').forEach(item => {
-    item.addEventListener('click', function() {
-        const bg = getComputedStyle(item).backgroundImage;
-        const url = bg.slice(5, -2);
-        const overlay = document.createElement('div');
-        overlay.className = 'lightbox-overlay';
-        overlay.innerHTML = `<img class="lightbox-img" src="${url}" alt="Imagen ampliada">`;
-        overlay.addEventListener('click', function(e) {
-            if (e.target === overlay) overlay.remove();
-        })
-        document.body.appendChild(overlay);
+const propItems = document.querySelectorAll('.prop__container-item');
+if (propItems.length > 0) {
+    propItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const bg = getComputedStyle(item).backgroundImage;
+            if (!bg || bg === 'none') return;
+            const url = bg.slice(5, -2);
+            const overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            overlay.innerHTML = `<img class="lightbox-img" src="${url}" alt="Imagen ampliada">`;
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) overlay.remove();
+            })
+            document.body.appendChild(overlay);
+        });
     });
-});
+}
 document.addEventListener('click', function(event) {
     if (
         event.target.classList.contains('header__open-nav-button') ||
@@ -29,6 +33,9 @@ document.addEventListener('click', function(event) {
         }
     }, 10);
 });
-document.getElementById('goTopBtn').addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+const goTopBtn = document.getElementById('goTopBtn');
+if (goTopBtn) {
+    goTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}

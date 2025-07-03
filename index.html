@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toledo Inmobiliaria</title>
+    <link rel="icon" type="image/png" href=".//imagenes/logo.webp">
+    <meta name="description" content="Esta pagina web trata de ventas y alquileres de inmuebles">
+    <meta name="keywords" content="inmobiliaria, inmobiliaria cidad de Azul, alquileres en Azul, ventas de propiedades en Azul, ventas de propiedades, alquileres, casas, propiedades, propiedades a la venta, Toledo Daiana inmobiliaria, inmobiliaria Toledo Daiana">
+    <meta property="og:title" content="Toledo Inmobiliaria">
+    <meta property="og:description" content="¿Queres vender, alquilar o encontrar tu nuevo hogar? Has llegado al lugar correcto">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label class="header__open-nav-button" for="open-menu" role="button">=</label>
+        <div class="header__logo-container"><img class="header__logo" src="imagenes/logo.png" alt="logo">Toledo Inmobiliaria</div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">Inicio</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Propiedades</a></li>
+                <li class="header__nav-item"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="imagenes/Bedroom.webp" class="profile__img" alt="foto de inmueble">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>Toledo Inmobiliaria</h1>
+                        <h2>Tu mejor opción en propiedades.</h2>
+                        <p>
+                            ¿Queres vender, alquilar o encontrar tu nuevo hogar? Has llegado al lugar correcto, estamos para ayudarte a encontrar la mejor solución para tus necesidades.
+                            Nuestros servicios inmobiliarios están enfocados en ayudarte a tomar desiciones informadas y seguras en el mercado inmobiliario. 
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Propiedades a la venta</h2>
+        <div class="portfolio__project-container">    
+            <div class="portfolio__project pancho-casa">
+                <a href="page2.html" class="project-link" aria-label="Ver más"></a>
+                <h2 class="portfolio__project-name">Gral. Paz 438, Azul</h2>
+                <div class="caract__prop pro_1">     
+                    <ul class="caracteristicas">
+                        <li>2 Habitaciones</li>
+                        <li>1 Baño</li>
+                        <li>Garage</li>
+                        <li>Patio chico</li>
+                        <li>Terraza apta para edificar</li>
+                    </ul>
+                </div>
+            </div>      
+            <div class="portfolio__project daniel-casa">
+                <a href="page3.html" class="project-link" aria-label="Ver más"></a>
+                <h2 class="portfolio__project-name">9 de Julio 804, Azul</h2>
+                <div class="caract__prop">
+                    <ul class="caracteristicas">
+                        <li>Cocina</li>
+                        <li>Comedor</li>
+                        <li>Living</li>
+                        <li>3 Habitaciones</li>
+                        <li>2 Baño</li>
+                        <li>Garage</li>
+                        <li>Patio chico</li>
+                        <li>Amplia terraza apta para edificar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="portfolio__project maximo-casa">
+                <a href="page4.html" class="project-link" aria-label="Ver más"></a>
+                <h2 class="portfolio__project-name">Malere 0765, Azul</h2>
+                <div class="caract__prop">
+                    <ul class="caracteristicas">
+                        <li>2 Habitaciones</li>
+                        <li>1 Baño</li>
+                        <li>Garage</li>
+                        <li>Patio amplio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form__title">Formulario de consulta</h2>
+        <p class="formulario-p">Por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad.</p>
+        <form class="form__form" action="">
+            <div class="form__input-container">
+                <label>
+                    <input type="text" placeholder="Nombre">
+                </label>
+            </div>
+
+            <div class="form__input-container">
+                <label>
+                    <input type="text" placeholder="Apellido">
+                </label>
+            </div>
+
+            <div class="form__input-container">
+                <label>
+                    <input type="email" placeholder="Correo">
+                </label>
+            </div>
+
+            <div class="form__input-container">
+                <label>
+                    <textarea placeholder="Escriba su mensaje..." name="" id=""></textarea>
+                </label>
+            </div>
+            <div class="form__input-container"><input type="submit">
+            </div>
+        </form>
+    </section>
+    <section class="contacto">
+        <h2 class="contact__title">Contacto</h2>
+        <div class="ubicacion">
+            <img src="imagenes/mapa (1).png" alt="">
+            <p class="">Olavarria 692</p>
+        </div>
+        <div class="phone">
+            <img src="/imagenes/telefono.png" alt="">
+            <p class="celular">2281 15349595</p>
+        </div>
+        <p class="contact__text">Tambien puedes contactarnos a través de nuestras redes sociales o por correo electrónico.</p>
+        <ul class="contact__list">
+            <li class="contact__item"><a href="https://www.facebook.com/profile.php?id=61576084105092" target="_blank"><img src="imagenes/facebook.png" alt="facebook-link"></a></li>
+            <li class="contact__item"><a href="https://www.instagram.com/_inmobiliariatoledo/" target="_blank"><img src="imagenes/instagram.png" alt="instagram-link"></a></li>
+            <li class="contact__item"><a href="mailto:dtoledoinmobiliaria@gmail.com"><img src="imagenes/gmail.png" alt="email-link"></a></li>
+        </ul>
+    </section>
+    <footer>
+        <strong>© 2025 Toledo Inmobiliaria. Todos los derechos reservados.</strong>
+    </footer>
+    <button id="goTopBtn" class="go-top-btn" aria-label="Ir arriba">↑</button>
+    <script src="pag2.js"></script>
+</body>
+</html>

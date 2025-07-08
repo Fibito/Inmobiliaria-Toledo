@@ -393,6 +393,9 @@ body,div,ul,nav,header,footer,a,li,label{
     margin-bottom: 30px;
 }
 .form__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding: 12px;
     max-width: 600px;
     width: 100%;
@@ -414,8 +417,17 @@ body,div,ul,nav,header,footer,a,li,label{
     min-height: 120px;
     font-family: inherit;
 }
+.form__input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
 .form__input-container input[type="submit"]{
+    align-items: flex-end;
+    width:fit-content;
+    padding: 0.5em 2em;
     border-radius: 12px;
+    cursor: pointer;
     padding: 12px;
     background-color: #080808;
     color: #fff;
